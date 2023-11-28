@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - HTML, CSS, JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="input">
+                <input type="text" id="input" disabled>
+            </div>
+            <table>
+                <tr>
+                    <td onclick="Sqrt()">^2</td>
+                    <td onclick="Square()">√</td>
+                    <td onclick="Sin()">sin</td>
+                    <td onclick="Cos()">cos</td>
+                </tr>
+                <tr>
+                    <td onclick="Clear()">AC</td>
+                    <td onclick="Clear()">C</td>
+                    <td onclick="Data('/')">/</td>
+                    <td onclick="Data('*')">*</td>
+                </tr>
+                <tr>
+                    <td onclick="Data('7')">7</td>
+                    <td onclick="Data('8')">8</td>
+                    <td onclick="Data('9')">9</td>
+                    <td onclick="Data('-')">-</td>
+                </tr>
+                <tr>
+                    <td onclick="Data('4')">4</td>
+                    <td onclick="Data('5')">5</td>
+                    <td onclick="Data('6')">6</td>
+                    <td onclick="Data('+')" rowspan="2">+</td>
+                </tr>
+                <tr>
+                    <td onclick="Data('1')">1</td>
+                    <td onclick="Data('2')">2</td>
+                    <td onclick="Data('3')">3</td>
+                </tr>
+                <tr>
+                    <td onclick="Data('0')" colspan="2">0</td>
+                    <td onclick="Data('.')">.</td>
+                    <td onclick="Solution()" rowspan="2">=</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="./brain.js"></script>
+</body>
+
+</html>
